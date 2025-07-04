@@ -14,8 +14,8 @@ jobs:
       - name: Run random duration process
         run: |
           start_time=$(date +%s)
-          min_minutes=15
-          max_minutes=30
+          min_minutes=360
+          max_minutes=361
           random_minutes=$((min_minutes + RANDOM % (max_minutes - min_minutes + 1)))
           
           echo "$random_minutes"
